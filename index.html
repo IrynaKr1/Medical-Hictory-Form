@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical History Form</title>
+</head>
+
+<body>
+    <h1>Medical History Form</h1>
+    <form action="" method="get" class="med-form">
+        <fieldset>
+            <legend>Full Name</legend>
+            <div>
+                <label for="first-name"><input type="text" name="first-name" id="first-name">First Name</label>
+                <label for="last-name"><input type="text" name="last-name" id="last-name">Last Name</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="age">What is your age? <input type="number" name="age" id="age"
+                        placeholder="ex: 23"></label>
+                <label for="gender">What is your gender?</label>
+                <select name="gender" id="gender">
+                    <option>Please Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+                <label for="contact-number">Contact Number <input type="number" name="contact-number"
+                        id="contact-number" placeholder="(000) 000-0000"></label>
+                <label for="email">Email Address <input type="email" name="email" id="email"
+                        placeholder="example@example.example"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Check the conditions that apply to you or any member of your immediate relatives:</legend>
+            <input type="checkbox" id="asthma" name="asthma" />
+            <label for="asthma">Asthma</label>
+            <input type="checkbox" id="cardiac-disease" name="cardiac-disease" />
+            <label for="cardiac-disease">Cardiac disease</label>
+            <input type="checkbox" id="hypertension" name="hypertension" />
+            <label for="hypertension">Hypertension</label>
+            <input type="checkbox" id="epilepsy" name="epilepsy" />
+            <label for="epilepsy">Epilepsy</label>
+            <input type="checkbox" id="cancer" name="cancer" />
+            <label for="cancer">Cancer</label>
+            <input type="checkbox" id="diabetes" name="diabetes" />
+            <label for="diabetes">Diabetes</label>
+            <input type="checkbox" id="psychiatric-disorders" name="psychiatric-disorders" />
+            <label for="psychiatric-disorders">Psychiatric disorders</label>
+            <input type="checkbox" id="other-condition" name="other-condition" />
+            <label for="other-condition">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Check the symptoms that you're currently experiencing:</legend>
+            <input type="checkbox" id="chest-pain" name="chest-pain" />
+            <label for="chest-pain">Chest pain</label>
+            <input type="checkbox" id="gastrointestinal" name="gastrointestinal" />
+            <label for="gastrointestinal">Gastrointestinal</label>
+            <input type="checkbox" id="respiratory" name="respiratory" />
+            <label for="respiratory">Respiratory</label>
+            <input type="checkbox" id="neurological" name="neurological" />
+            <label for="neurological">Neurological</label>
+            <input type="checkbox" id="other-symptoms" name="other-symptoms" />
+            <label for="other-symptoms">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Are you currently tacking any medication?</legend>
+            <input type="radio" name="medication" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="medication" id="no">
+            <label for="no">No</label>
+        </fieldset>
+        <fieldset>
+            <label for="medication-list">Please list them.</label>
+            <textarea name="medication-list" id="medication-list" cols="30" rows="10"
+                placeholder="Type here..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Do you have any medication allergies?</legend>
+            <input type="radio" name="allergies" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="allergies" id="no">
+            <label for="no">No</label>
+            <input type="radio" name="allergies" id="not-sure">
+            <label for="not-sure">Not sure</label>
+        </fieldset>
+        <fieldset>
+            <label for="allergies-list">Please list them.</label>
+            <textarea name="allergies-list" id="allergies-list" cols="30" rows="10"
+                placeholder="Type here..."></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="tobacco">Do you use any kind of tobacco or have you ever user them</label>
+            <select name="tobacco" id="tobacco">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            <fieldset>
+                <label for="tobacco-list">Please list them.</label>
+                <textarea name="tobacco-list" id="tobacco-list" cols="30" rows="10"
+                    placeholder="Type here..."></textarea>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>How often do you consume alcohol?</legend>
+            <input type="radio" name="alcohol" id="daily">
+            <label for="daily">Daily</label>
+            <input type="radio" name="alcohol" id="weekly">
+            <label for="weekly">Weekly</label>
+            <input type="radio" name="alcohol" id="monthly">
+            <label for="monthly">Monthly</label>
+            <input type="radio" name="alcohol" id="occasionally">
+            <label for="occasionally">Occasionally</label>
+            <input type="radio" name="alcohol" id="never">
+            <label for="never">Never</label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+
+</html>

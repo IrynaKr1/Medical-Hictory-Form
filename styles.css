@@ -60,7 +60,18 @@ form {
     font-size: 2rem;
     font-weight: bold;
     line-height: 1.1;
-    display: grid;
-    grid-template-columns: 1em auto;
-    gap: 0.5em;
+    display: inline;
+}
+
+textarea {
+    width: 70%;
+    vertical-align: top;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px; 
 }

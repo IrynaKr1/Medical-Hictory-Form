@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+input:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.94);
+}
+
+.full-name {
+    font-size: smaller;
+    color: darkgray;
+}
+
+select {
+    background-color: lightgrey;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: none;
+    border-bottom: solid black 1px;
+    padding: 10px 10px 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.contact-data {
+    margin-top: 10px;
+}
+
+form {
+    border: solid black 2px;
+    padding: 10px;
+}
+
+
+.form-checkbox {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}

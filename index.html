@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Medical History Form</title>
 </head>
 
@@ -13,20 +14,26 @@
         <fieldset>
             <legend>Full Name</legend>
             <div>
-                <label for="first-name"><input type="text" name="first-name" id="first-name">First Name</label>
-                <label for="last-name"><input type="text" name="last-name" id="last-name">Last Name</label>
+                <label for="first-name" class="full-name"><input type="text" name="first-name" id="first-name">First
+                    Name</label>
+                <label for="last-name" class="full-name"><input type="text" name="last-name" id="last-name">Last
+                    Name</label>
             </div>
         </fieldset>
         <fieldset>
             <div>
                 <label for="age">What is your age? <input type="number" name="age" id="age"
                         placeholder="ex: 23"></label>
+            </div>
+            <div>
                 <label for="gender">What is your gender?</label>
                 <select name="gender" id="gender">
                     <option>Please Select</option>
                     <option>Male</option>
                     <option>Female</option>
                 </select>
+            </div>
+            <div class="contact-data">
                 <label for="contact-number">Contact Number <input type="number" name="contact-number"
                         id="contact-number" placeholder="(000) 000-0000"></label>
                 <label for="email">Email Address <input type="email" name="email" id="email"
@@ -35,34 +42,34 @@
         </fieldset>
         <fieldset>
             <legend>Check the conditions that apply to you or any member of your immediate relatives:</legend>
-            <input type="checkbox" id="asthma" name="asthma" />
+            <input type="checkbox" id="asthma" name="asthma" class="form-checkbox"/>
             <label for="asthma">Asthma</label>
-            <input type="checkbox" id="cardiac-disease" name="cardiac-disease" />
+            <input type="checkbox" id="cardiac-disease" name="cardiac-disease" class="form-checkbox"/>
             <label for="cardiac-disease">Cardiac disease</label>
-            <input type="checkbox" id="hypertension" name="hypertension" />
+            <input type="checkbox" id="hypertension" name="hypertension" class="form-checkbox"/>
             <label for="hypertension">Hypertension</label>
-            <input type="checkbox" id="epilepsy" name="epilepsy" />
+            <input type="checkbox" id="epilepsy" name="epilepsy" class="form-checkbox"/>
             <label for="epilepsy">Epilepsy</label>
-            <input type="checkbox" id="cancer" name="cancer" />
+            <input type="checkbox" id="cancer" name="cancer" class="form-checkbox"/>
             <label for="cancer">Cancer</label>
-            <input type="checkbox" id="diabetes" name="diabetes" />
+            <input type="checkbox" id="diabetes" name="diabetes" class="form-checkbox"/>
             <label for="diabetes">Diabetes</label>
-            <input type="checkbox" id="psychiatric-disorders" name="psychiatric-disorders" />
+            <input type="checkbox" id="psychiatric-disorders" name="psychiatric-disorders" class="form-checkbox"/>
             <label for="psychiatric-disorders">Psychiatric disorders</label>
-            <input type="checkbox" id="other-condition" name="other-condition" />
+            <input type="checkbox" id="other-condition" name="other-condition" class="form-checkbox"/>
             <label for="other-condition">Other</label>
         </fieldset>
         <fieldset>
             <legend>Check the symptoms that you're currently experiencing:</legend>
-            <input type="checkbox" id="chest-pain" name="chest-pain" />
+            <input type="checkbox" id="chest-pain" name="chest-pain" class="form-checkbox"/>
             <label for="chest-pain">Chest pain</label>
-            <input type="checkbox" id="gastrointestinal" name="gastrointestinal" />
+            <input type="checkbox" id="gastrointestinal" name="gastrointestinal" class="form-checkbox"/>
             <label for="gastrointestinal">Gastrointestinal</label>
-            <input type="checkbox" id="respiratory" name="respiratory" />
+            <input type="checkbox" id="respiratory" name="respiratory" class="form-checkbox"/>
             <label for="respiratory">Respiratory</label>
-            <input type="checkbox" id="neurological" name="neurological" />
+            <input type="checkbox" id="neurological" name="neurological" class="form-checkbox"/>
             <label for="neurological">Neurological</label>
-            <input type="checkbox" id="other-symptoms" name="other-symptoms" />
+            <input type="checkbox" id="other-symptoms" name="other-symptoms" class="form-checkbox"/>
             <label for="other-symptoms">Other</label>
         </fieldset>
         <fieldset>
